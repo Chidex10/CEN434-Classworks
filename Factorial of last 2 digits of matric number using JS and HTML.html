@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factorial Calculator</title>
+</head>
+<body>
+  <h1>Factorial Calculator</h1>
+  <p>The factorial of 7 is:</p>
+  <p id="result"></p>
+
+  <script type= "text/Javascript">
+    function factorial(n) {
+      let result = 1;
+      for (let i = 1; i <= n; i++) {
+        result *= i;
+      }
+      return result;
+    }
+
+    const number = 7;
+    const factorialOf7 = factorial(number);
+    
+    document.getElementById("result").textContent = factorialOf7;
+  </script>
+</body>
+</html>
