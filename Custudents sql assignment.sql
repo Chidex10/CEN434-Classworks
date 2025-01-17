@@ -1,0 +1,5 @@
+SELECT TOP (1000) [id]
+      ,[name]
+      ,[matric_no]
+      ,[gender]
+  FROM [master].[dbo].[CovenatStudents]
